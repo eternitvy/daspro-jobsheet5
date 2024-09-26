@@ -32,6 +32,7 @@ public class Kafe22 {
 
         double totalHarga = hargaMenu * jumlah;
 
+
         switch (ukuranCup) {
             case 'S':
                 break;
@@ -41,6 +42,9 @@ public class Kafe22 {
             case 'L':
                 totalHarga += 0.4 * totalHarga;
                 break;
+            default:
+                System.out.println("banyak rekues");
+
         }
 
         double diskon = keanggotaan ? 0.1 : 0;
